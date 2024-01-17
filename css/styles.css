@@ -16,6 +16,7 @@
   --light-slate: #8e8f99;
   --dairy: #fcfcfc;
   --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --cornflower-opacity-1: rgba(231, 233, 252, 1);
 }
 
 body {
@@ -246,7 +247,8 @@ ol {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container {
-  width: 1158px;
+  width: 100%;
+  max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -375,6 +377,7 @@ ol {
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  width: 100%;
   max-width: 1440px;
   background-size: cover;
   margin: auto;
@@ -852,8 +855,15 @@ body {
 .mobile-menu-nav .menu-list {
   display: flex;
   flex-flow: column nowrap;
-  gap: 20px;
-  padding: 24px;
+  margin-bottom: 284px;
+}
+
+.mobile-menu-nav .menu-list a {
+  padding: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  text-transform: capitalize;
 }
 
 .mobile-menu-nav .menu-list .link-active::after {
@@ -864,6 +874,53 @@ body {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+}
+
+.mobile-contact-list {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 40px;
+}
+
+.mobile-contact-list .mobile-2-mail {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  color: var(--iris);
+}
+
+.mobile-contact-list .mobile-1-mail {
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  color: var(--slate);
+}
+
+.mobile-footer-social-link {
+  display: flex;
+  gap: 56px;
+}
+
+.mobile-menu-all {
+  margin: 80px 35px 40px 40px;
+}
+.js-close-menu {
+  border-radius: 50%;
+  color: var(--navy-blue);
+  background-color: var(--cornflower-opacity-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
 }
 
 @media (min-width: 480px) {
