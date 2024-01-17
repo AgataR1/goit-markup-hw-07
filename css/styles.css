@@ -832,6 +832,8 @@ body {
   display: flex;
   max-width: 100%;
   justify-content: space-between;
+  align-items: center;
+  height: 70px;
 }
 
 .mobile-menu button {
